@@ -22,7 +22,7 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
 ## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/usuario/projeto_final_2024.git
+   git clone https://github.com/Matheus2570/projeto_final_2024.git
 
 2. Inicie o projeto e coloque as blibliotecas:
    ```bash
