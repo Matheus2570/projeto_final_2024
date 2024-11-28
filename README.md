@@ -27,7 +27,7 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
 2. Inicie o projeto e coloque as blibliotecas:
    ```bash
    npm init -y
-npm install express tedious cors
+   npm install express tedious cors
 
 3. Crie seu banco de dados no SQL Server:
    ```bash
