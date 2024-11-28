@@ -34,7 +34,7 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    https://github.com/Matheus2570/projeto_final_2024/blob/main/backEnd/bancoDeDados.txt
 
 4. Não esqueça de rodar seu servidor:
-  ```bash
+  ``bash
    node ./index.js
 
 ## Integrantes do Grupo:
