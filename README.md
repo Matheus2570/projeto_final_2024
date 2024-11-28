@@ -29,6 +29,10 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    npm init -y
    npm install express tedious cors
 
-3. Não esqueça de rodar seu servidor:
+3. Banco de dados:
+   ```bash
+   https://github.com/Matheus2570/projeto_final_2024/blob/main/backEnd/bancoDeDados.txt
+
+4. Não esqueça de rodar seu servidor:
   ```bash
    node ./index.js
