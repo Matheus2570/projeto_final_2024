@@ -36,8 +36,3 @@ npm install express tedious cors
 4. Não esqueça de rodar seu servidor:
   ```bash
    node ./index.js
-   
-
-
-   
-
