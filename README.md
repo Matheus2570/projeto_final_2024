@@ -24,6 +24,20 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    ```bash
    git clone https://github.com/usuario/projeto_final_2024.git
 
+2. Inicie o projeto e coloque as blibliotecas:
+   ```bash
+   npm init -y
+npm install express tedious cors
+
+3. Crie seu banco de dados no SQL Server:
+   ```bash
+   CREATE DATABASE nome_do_banco
+
+4. Não esqueça de rodar seu servidor:
+  ```bash
+   node ./index.js
+   
+
 
    
 
