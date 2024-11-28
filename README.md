@@ -37,6 +37,5 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
   ```bash
    node ./index.js
 
-
+## Integrantes do Grupo:
 ![Foto do grupo](https://github.com/user-attachments/assets/76b2b77f-7145-4ce5-a35b-1d77e852dd94)
-
