@@ -19,6 +19,10 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
 - **HTML/CSS**: Estrutura e estilização do site.
 - **JavaScript**: Lógica de interação e consumo da API.
 
+## Integrantes do Grupo:
+<img src="https://github.com/user-attachments/assets/da331068-ba47-4e8d-972e-9b738e6684db" width="300" alt="Foto do Grupo">
+
+
 ## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
@@ -29,6 +33,10 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    npm init -y
    npm install express tedious cors
 
-3. Não esqueça de rodar seu servidor:
+3. Banco de dados:
+   ```bash
+   https://github.com/Matheus2570/projeto_final_2024/blob/main/backEnd/bancoDeDados.txt
+
+ 4. Não esqueça de rodar seu servidor:
   ```bash
    node ./index.js
