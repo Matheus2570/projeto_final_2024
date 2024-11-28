@@ -38,6 +38,5 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    node ./index.js
 
 ## Integrantes do Grupo:
-<img src="![Foto do grupo](https://github.com/user-attachments/assets/da331068-ba47-4e8d-972e-9b738e6684db)
-" width="300" alt="Foto do Grupo
-">
+<img src="https://github.com/user-attachments/assets/da331068-ba47-4e8d-972e-9b738e6684db" width="300" alt="Foto do Grupo">
+
