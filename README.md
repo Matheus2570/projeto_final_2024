@@ -29,10 +29,6 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
    npm init -y
    npm install express tedious cors
 
-3. Crie seu banco de dados no SQL Server:
-   ```bash
-   CREATE DATABASE nome_do_banco
-
-4. Não esqueça de rodar seu servidor:
+3. Não esqueça de rodar seu servidor:
   ```bash
    node ./index.js
