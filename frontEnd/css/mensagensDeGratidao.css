@@ -1,0 +1,257 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-image: url(./img/fundoAmarelo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fundomechendo 90s infinite linear;
+}
+
+header {
+    background-color: #11a04d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #008537;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 1vw;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    color: #f3cc2e;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.headerMain h2 {
+    margin-bottom: 20px;
+}
+
+.botao {
+    background-color: #11a04d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.botao:hover {
+    background-color: #008537;
+    transform: scale(1.05);
+}
+
+.botaoBuscar {
+    background-color: #11a04d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.botaoBuscar:hover {
+    background-color: #008537;
+    transform: scale(1.05);
+}
+
+.botaoEnviar {
+    background-color: #11a04d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.botaoEnviar:hover {
+    background-color: #008537;
+    transform: scale(1.05);
+}
+
+.blocoTextoAleatorio {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    border: 2px solid #11a04d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #444;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blocoTextoAleatorio:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blocoAdicionarMensagem {
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #11a04d;
+    margin-top: 3vw;
+    color: white;
+    padding: 20px;
+}
+
+.imgGrupo {
+    width: 20vw;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.imgGrupo:hover {
+    transform: scale(1.03);
+}
+
+.contato h3, .tituloIntegrantes h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.integrantesGlobal {
+    display: flex;
+    gap: 25px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+@keyframes fundomechendo {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Media Queries para dispositivos menores */
+
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .botao {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    .blocoTextoAleatorio {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 1em;
+    }
+
+    .imgGrupo {
+        width: 30vw;
+        border-radius: 15px;
+        margin-top: 3vw;
+    }
+
+    .integrantesGlobal {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .headerMain h2 {
+        font-size: 1.5em;
+    }
+
+    .botao {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    nav {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    .blocoTextoAleatorio {
+        width: 95%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        width: 95%;
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .imgGrupo {
+        width: 45vw;
+        border-radius: 15px;
+        margin-top: 3vw;
+    }
+
+    .contato h3 {
+        font-size: 1.1em;
+    }
+}
