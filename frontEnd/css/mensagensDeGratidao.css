@@ -26,16 +26,19 @@ nav {
 nav a {
     color: white;
     padding: 1vw;
-    margin: 0 15px;
     text-decoration: none;
     font-size: 1.1em;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.8s ease;
+    padding-left: 5.8vw;
+    padding-right: 5.8vw;
 }
 
 nav a:hover {
     text-decoration: underline;
     transform: scale(1.05);
     color: #f3cc2e;
+    background-color:#11a04d ;
+    border-radius: 5px;
 }
 
 .main {
@@ -95,7 +98,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-.blocoTextoAleatorio {
+.blocoAleatorio {
     display: none;
     margin: 20px auto;
     padding: 20px;
@@ -110,10 +113,15 @@ nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blocoTextoAleatorio:hover {
+.blocoAleatorio:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+#erroMensagem {
+    display:none;
+    color: red;
+  }
 
 .blocoAdicionarMensagem {
     margin-top: 30px;
@@ -190,6 +198,8 @@ input[type="text"] {
     nav a {
         margin: 0 8px;
         font-size: 1em;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     .imgGrupo {
