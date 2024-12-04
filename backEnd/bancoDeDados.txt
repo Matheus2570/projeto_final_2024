@@ -12,7 +12,7 @@ historia nvarchar(max) not null,
 imagemurl nvarchar(255)
 );
 
-insert into MensagensCurtas (mensagem, tema) values
+insert into mensagensCurtas (mensagem, tema) values
 ('A família é a nossa base, o lugar onde encontramos amor e apoio incondicional.', 'Família'),
 ('A família é a primeira escola de virtudes e a maior fonte de sabedoria.', 'Família'),
 ('A verdadeira força de uma família está na união e no amor que ela oferece.', 'Família'),
