@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../imgGrupo/bottom-view-women-protesting-outdoors.jpg);
+  animation: fundomechendo 90s infinite linear;
+ 
+}
+
+
+header {
+  color: #16aa63;
+  text-align: center;
+  font-size: 300%;
+  text-shadow: 0.06em 0.03em #8d9d88ba;
+  background-color: #0000008d;
+  margin-top: -4.3%;
+}
+
+
+.links a{
+  font-size: 1.3em;
+  background-color: #139858;
+  box-shadow: 2px 2px 2px #888888;
+  color: white;
+  padding: 19px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.links a:hover 
+{ background-color:  #109f5a; 
+transition: 0.5s;
+opacity: 0.7;
+}
+
+.img1:hover , .img2:hover {
+  background-color:  #109f5a; 
+transition: 0.5s;
+opacity: 0.7;
+}
+
+
+.links {
+  display: flex;
+  padding: auto;
+  width: 100%;
+margin-top: -4.4%;
+}
+
+.text1, .text2 {
+  background-color: #16a56080;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: aliceblue;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 3%;
+}
+
+.text1 img, .text2 img {
+  width: 22%;
+  padding: 1%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.text1 img:hover, .text2 img:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1398585a;
+  margin-top: 3vw;
+  color: white;
+
+}
+
+.imgGrupo {
+  width: 20vw;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.imgGrupo:hover {
+  transform: scale(1.03);
+}
+
+.contato h3, .tituloIntegrantes h3 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.integrantesGlobal {
+  display: flex;
+  gap: 25px;
+  font-size: 1em;
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 720px) {
+  h1 {
+      font-size: 4rem;
+  }
+
+  header {
+      margin-top: -6%;
+  }
+
+  .links a {
+      font-size: 0.9em;
+      padding: 15px;
+      margin-top: -1.7%;
+  }
+
+  .text1, .text2 {
+      width: 80%;
+  }
+
+  .text1 img, .text2 img {
+      width: 35%;
+  }
+
+ 
+  .imgGrupo {
+      width: 90px;
+  }
+
+  .integrantesGlobal {
+      gap: 10px;
+      font-size: 0.9em;
+  }.footer {
+    text-align: center;
+    flex-direction: column;
+}
+
+.imgGrupo {
+    width: 45vw;
+    border-radius: 15px;
+    margin-top: 3vw;
+}
+
+.contato h3 {
+    font-size: 1.1em;
+}
+}
