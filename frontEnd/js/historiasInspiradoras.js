@@ -6,7 +6,7 @@ document.getElementById("botao").addEventListener("click", () => {
         return;
     }
 
-    fetch(`http://localhost:3000/historia/${encodeURIComponent(palavra)}`)
+    fetch(`http://localhost:3000/historia/${palavra}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error("Erro ao buscar histórias.");
@@ -28,10 +28,9 @@ document.getElementById("botao").addEventListener("click", () => {
                 historiaElement.classList.add("historia-item");
                 historiaElement.innerHTML = `
                     <h3>História ${historia.id}</h3>
-                    <p>${historia.historia}</p>
-                    ${historia.imagemurl ? `<img src="${historia.imagemurl}" alt="Imagem da história">` : ""}
-                `;
+                    <p>${historia.historia}</p> ${historia.imagemurl ?  `<img src="${historia.imagemurl}" alt="Imagem da história">` : ""}  `;
                 bloco.appendChild(historiaElement);
+                console.log(historia.imagemurl)
             });
         })
         .catch(error => {
