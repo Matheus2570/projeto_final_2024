@@ -1,17 +1,15 @@
 body {
-background-image: url(../imgGratidao/fundo.jpg);
-background-size: cover;
+background-color: #d8e2dc;
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 padding: 0;
-overflow: hidden;
 }
 
 .links a{
     font-size: 1.3em;
-    background-color: #139858;
+    background-color: #159e5c;
     box-shadow: 2px 2px 2px #888888;
-    color: white;
+    color: #000000;
     padding: 1.5vh;
     transition: transform 0.3s ease;
     text-decoration: none;
@@ -22,20 +20,20 @@ overflow: hidden;
 }
 
 .links a:hover 
-{ background-color:  #109f5a; 
+{ background-color: #159e5c; 
 transition: 0.5s;
 opacity: 0.7;
 }
 
 .links {
     display: flex;
-        width: 100%;
+        width: 101%;
 
 }
 
 
 h1 {
-    color: #06b862;
+    color: #159e5c;
     text-align: center;
     padding: 1%;
     font-size: 300%;
@@ -47,8 +45,7 @@ h1 {
     gap: 20px;
     align-items: center;
     margin-top: 2vw;
-    overflow: hidden;
-    overflow: auto;
+
 }
 
 
@@ -88,7 +85,7 @@ h1 {
 
 .image-container p,
 .image-container1 p {
-    color: aliceblue;
+    color: #000000;
     font-size: 16px;
     padding: 20px;
 }
@@ -100,13 +97,13 @@ h1 {
     align-items: center;
     background-color: #008a4e;
     margin-top: 3vw;
-    color: white;
+    color: #000000;
     padding: 20px;
-    width: 100%;
+    width: 99%;
 }
 
 .imgGrupo {
-    width: 10vw;
+    width: 20vw;
     border-radius: 15px;
     transition: transform 0.4s ease;
 }
