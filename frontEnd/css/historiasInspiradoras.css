@@ -1,0 +1,233 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-image: url(./img/fundoAmarelo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fundomechendo 90s infinite linear;
+}
+
+.header {
+    background-color: #11a04d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #008537;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.8s ease;
+    padding-left: 5.8vw;
+    padding-right: 5.8vw;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    color: #f3cc2e;
+    background-color:#11a04d ;
+    border-radius: 5px;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #palavraHistoriaInspiradora {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  #botao {
+    width: 30%;
+    height: 8vh;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+  }
+  
+  #botao:hover {
+    background-color: #3e8e41;
+  }
+  
+  .bx {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+
+  .historiasInspiradorasBloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.historiasInspiradorasBloco .historia-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.historiasInspiradorasBloco .historia-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.historiasInspiradorasBloco .historia-item h3 {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.historiasInspiradorasBloco .historia-item p {
+    font-size: 16px;
+text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.historiasInspiradorasBloco .historia-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+  
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #11a04d;
+    color: white;
+    padding: 20px;
+}
+
+.imgGrupo {
+    width: 20vw;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.imgGrupo:hover {
+    transform: scale(1.03);
+}
+
+.contato h3, .tituloIntegrantes h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.integrantesGlobal {
+    display: flex;
+    gap: 25px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+@keyframes fundomechendo {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Media Queries para dispositivos menores */
+
+@media (max-width: 768px) {
+   
+    .nav a {
+        margin: 0 8px;
+        font-size: 1em;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .imgGrupo {
+        width: 30vw;
+        border-radius: 15px;
+        margin-top: 3vw;
+    }
+
+    .integrantesGlobal {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+
+    .nav {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .nav a {
+display: flex;
+justify-content: center;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    .blocoTextoAleatorio {
+        width: 95%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        width: 95%;
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .imgGrupo {
+        width: 45vw;
+        border-radius: 15px;
+        margin-top: 3vw;
+    }
+
+    .contato h3 {
+        font-size: 1.1em;
+    }
+}
