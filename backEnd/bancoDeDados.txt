@@ -1,18 +1,22 @@
-CREATE DATABASE Gratidao
+CREATE DATABASE Gratidao;
+USE Gratidao;
 
-create table mensagensCurtas (
-id int identity(1,1) primary key,
-mensagem nvarchar(1000) not null,
-tema varchar(100) not null
+-- Tabela para mensagens curtas
+CREATE TABLE mensagensCurtas (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  mensagem NVARCHAR(1000) NOT NULL,
+  tema VARCHAR(100) NOT NULL
 );
 
-create table historiasInspiradoras (
-id int identity(1,1) primary key,
-historia nvarchar(max) not null,
-imagemurl nvarchar(255)
+-- Tabela para histórias inspiradoras
+CREATE TABLE historiasInspiradoras (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  historia NVARCHAR(MAX) NOT NULL,
+  imagemurl NVARCHAR(255) -- Campo opcional
 );
 
-insert into mensagensCurtas (mensagem, tema) values
+-- Inserir dados na tabela de mensagens curtas
+INSERT INTO mensagensCurtas (mensagem, tema) VALUES
 ('A família é a nossa base, o lugar onde encontramos amor e apoio incondicional.', 'Família'),
 ('A família é a primeira escola de virtudes e a maior fonte de sabedoria.', 'Família'),
 ('A verdadeira força de uma família está na união e no amor que ela oferece.', 'Família'),
@@ -44,40 +48,35 @@ insert into mensagensCurtas (mensagem, tema) values
 ('Diante da família unida, todo leão vira formiga.', 'Família'),
 ('Suba o primeiro degrau com fé. Não é necessário que você veja toda a escada. Apenas dê o primeiro passo.', 'Fé')
 
-insert into HistoriasInspiradoras (historia, imagemurl) values
 
-('A Emanuelly da Luz Rodrigues, de 6 anos, pediu em uma carta ao Papai Noel uma cadeira de rodas motorizada para seu vizinho Ito, de 56 anos. Ito perdeu o movimento das pernas e das mãos há três anos e dependia de ajuda para as tarefas diárias. A história sensibilizou um leitor da Gazeta do Povo, que doou a cadeira, e uma corrente do bem se iniciou para reformar a casa de Ito.', NULL),
+-- Inserir dados na tabela de histórias inspiradoras
+INSERT INTO historiasInspiradoras (historia, imagemurl) VALUES
+('A Emanuelly da Luz Rodrigues, de 6 anos, pediu em uma carta ao Papai Noel uma cadeira de rodas motorizada para seu vizinho Ito, de 56 anos. Ito perdeu o movimento das pernas e das mãos há três anos e dependia de ajuda para as tarefas diárias. A história sensibilizou um leitor da Gazeta do Povo, que doou a cadeira, e uma corrente do bem se iniciou para reformar a casa de Ito.', './imgHistoriasInspiradoras/img1.jpeg'),
 
-('Em Fraiburgo, SC, Neri Gonçalves, de 66 anos, sofreu um acidente que o impediu de trabalhar. Sua nora organizou uma rifa para arrecadar fundos, sorteando o carro da família. O ganhador da rifa surpreendeu ao devolver o veículo para Neri, mostrando um gesto de solidariedade.', NULL),
+('Em Fraiburgo, SC, Neri Gonçalves, de 66 anos, sofreu um acidente que o impediu de trabalhar. Sua nora organizou uma rifa para arrecadar fundos, sorteando o carro da família. O ganhador da rifa surpreendeu ao devolver o veículo para Neri, mostrando um gesto de solidariedade.', './imgHistoriasInspiradoras/img2.jpeg'),
 
-('Wanda Mendes Terra, de 78 anos, perdeu seu filho Alexandre para a Covid-19 e guardava o último frasco do perfume Annete, favorito do filho, que já não era fabricado. Ao saber disso, a marca O Boticário produziu um frasco exclusivo para ela, como forma de homenagear sua história.', NULL),
+('Wanda Mendes Terra, de 78 anos, perdeu seu filho Alexandre para a Covid-19 e guardava o último frasco do perfume Annete, favorito do filho, que já não era fabricado. Ao saber disso, a marca O Boticário produziu um frasco exclusivo para ela, como forma de homenagear sua história.', './imgHistoriasInspiradoras/img3.jpeg'),
 
-('O guarda civil Marcos Antonio de Moraes, de São Paulo, dedica seu tempo livre a ajudar moradores de rua, promovendo reencontros familiares e reinserção social. Ele já auxiliou quase 300 pessoas, identificando nos olhares de cada um a necessidade de socorro.', NULL),
+('O guarda civil Marcos Antonio de Moraes, de São Paulo, dedica seu tempo livre a ajudar moradores de rua, promovendo reencontros familiares e reinserção social. Ele já auxiliou quase 300 pessoas, identificando nos olhares de cada um a necessidade de socorro.', './imgHistoriasInspiradoras/img4.jpeg'),
 
-('Alessandra Nunes Gonçalves Gomes, após ser internada por Covid-19, conheceu Yamila, uma mulher cega e abandonada pela família. Alessandra acolheu Yamila em sua casa, mudando completamente sua vida e provando que amizade pode transformar destinos.', NULL),
+('Alessandra Nunes Gonçalves Gomes, após ser internada por Covid-19, conheceu Yamila, uma mulher cega e abandonada pela família. Alessandra acolheu Yamila em sua casa, mudando completamente sua vida e provando que amizade pode transformar destinos.', './imgHistoriasInspiradoras/img5.jpeg'),
 
-('Kathleen Osborne, uma mãe britânica de 28 anos, enfrentou a difícil escolha entre interromper sua gravidez para tratar um câncer ou amputar a perna. Optando pela amputação, ela salvou sua filha e demonstrou um exemplo de amor e coragem incondicionais.', NULL),
+('Kathleen Osborne, uma mãe britânica de 28 anos, enfrentou a difícil escolha entre interromper sua gravidez para tratar um câncer ou amputar a perna. Optando pela amputação, ela salvou sua filha e demonstrou um exemplo de amor e coragem incondicionais.', './imgHistoriasInspiradoras/img6.jpeg'),
 
-('Paulo Cubo, de 53 anos, é morador de Americana, no interior do estado de São Paulo. Ele sempre teve pedaços de papelão em casa, que utilizava no trabalho com pintor, para forrar pisos e superfícies. Em janeiro de 2020, na busca pelos guardados em meio a pedaços de madeira, ele levou uma picada de aranha-marrom e precisou de cuidados médicos. O caso só foi piorando, ele acabou usando aparelhos para respirar e chegou a ser praticamente desenganado pela equipe médica. A amputação do braço direito foi a solução que salvou a vida de Paulo. Meses depois, quando voltou para casa, se deu conta de que a profissão, exercida por mais de 40 anos, já não poderia mais ocupar o tempo dele. E aí que veio um grande perigo: a depressão. Mas há poucos meses ele passou a se dedicar a uma horta e isso mudou não só a vida de Paulo, mas de sua comunidade também. ', NULL),
+('Paulo Cubo, de 53 anos, é morador de Americana, no interior do estado de São Paulo. Ele sempre teve pedaços de papelão em casa, que utilizava no trabalho com pintor, para forrar pisos e superfícies. Em janeiro de 2020, na busca pelos guardados em meio a pedaços de madeira, ele levou uma picada de aranha-marrom e precisou de cuidados médicos. O caso só foi piorando, ele acabou usando aparelhos para respirar e chegou a ser praticamente desenganado pela equipe médica. A amputação do braço direito foi a solução que salvou a vida de Paulo. Meses depois, quando voltou para casa, se deu conta de que a profissão, exercida por mais de 40 anos, já não poderia mais ocupar o tempo dele. E aí que veio um grande perigo: a depressão. Mas há poucos meses ele passou a se dedicar a uma horta e isso mudou não só a vida de Paulo, mas de sua comunidade também. ', './imgHistoriasInspiradoras/img7.jpeg'),
 
-('Chad Turns, motorista de uma empresa de entregas de encomendas foi às lágrimas depois que os clientes que ele costuma atender há uma década em Dauphin, no estado norte-americado da Pensilvânia, demonstraram sua gratidão pelo trabalho que ele tem desempenhado, de uma forma especial. A ideia nasceu depois de os moradores perceberem o quanto ele se empenhou a mais, durante a pandemia, para atendê-los bem, já que as compras online aumentaram consideravelmente.', NULL),
+('Chad Turns, motorista de uma empresa de entregas de encomendas foi às lágrimas depois que os clientes que ele costuma atender há uma década em Dauphin, no estado norte-americado da Pensilvânia, demonstraram sua gratidão pelo trabalho que ele tem desempenhado, de uma forma especial. A ideia nasceu depois de os moradores perceberem o quanto ele se empenhou a mais, durante a pandemia, para atendê-los bem, já que as compras online aumentaram consideravelmente.', './imgHistoriasInspiradoras/img8.jpeg'),
 
-('Jose Villarruel viveu os últimos oito anos em um carro, enquanto trabalhava como professor substituto em uma escola do sul do estado norte-americano da Califórnia, para ajudar a sustentar sua família, incluindo sua esposa doente, que vivem no México. Quando a pandemia começou e as aulas passaram para o ensino à distância, a necessidade de professores substitutos foi embora. Jose ficou então desempregado e manteve seu sustento com a ajuda do seguro social e passou a morar em um carro.', NULL),
+('Jose Villarruel viveu os últimos oito anos em um carro, enquanto trabalhava como professor substituto em uma escola do sul do estado norte-americano da Califórnia, para ajudar a sustentar sua família, incluindo sua esposa doente, que vivem no México. Quando a pandemia começou e as aulas passaram para o ensino à distância, a necessidade de professores substitutos foi embora. Jose ficou então desempregado e manteve seu sustento com a ajuda do seguro social e passou a morar em um carro.', './imgHistoriasInspiradoras/img9.jpeg'),
 
-('Foi a solidariedade que uniu as histórias de um radialista e um carpinteiro, em Fraiburgo, no oeste catarinense. Neri Gonçalves, de 66 anos, mora em uma propriedade a 20 km da cidade e um faz-tudo. O carro era o principal meio de transporte entre uma empreitada e outra. Em abril deste ano ele sofreu um acidente e ficou um tempo sem poder trabalhar. A nora dele sugeriu, então, fazer uma rifa e sortear o carro para que a família arrecadasse algum dinheiro e pudesse arcar, principalmente, com as despesas médicas do tratamento. Ele só não esperava ver a atitude do ganhador da rifa.', NULL),
+('Foi a solidariedade que uniu as histórias de um radialista e um carpinteiro, em Fraiburgo, no oeste catarinense. Neri Gonçalves, de 66 anos, mora em uma propriedade a 20 km da cidade e um faz-tudo. O carro era o principal meio de transporte entre uma empreitada e outra. Em abril deste ano ele sofreu um acidente e ficou um tempo sem poder trabalhar. A nora dele sugeriu, então, fazer uma rifa e sortear o carro para que a família arrecadasse algum dinheiro e pudesse arcar, principalmente, com as despesas médicas do tratamento. Ele só não esperava ver a atitude do ganhador da rifa.', './imgHistoriasInspiradoras/img10.jpeg'),
 
-('Nem em sonho a Edilaine Aparecida de Lima poderia imaginar o que o futuro reservaria para ela. Aos 15 anos, grávida, passou fome, enfrentou a miséria. Virou catadora de papel e perdeu a guarda de uma das filhas. Doente, foi morar na Vila 29 de Outubro, em Curitiba. A ocupação fica no bairro Caximba, região do antigo aterro sanitário da capital paranaense. Só que essa história, que tinha tudo para terminar mal, serviu de combustível para Edilaine querer fazer a diferença. Ajudada pelos moradores da Vila nos momentos de maior necessidade, ela quis retribuir. Apaixonada por Monteiro Lobato, começou a reunir as crianças do bairro, durante a tarde, para contar histórias infantis. Quando se deu conta eram 30 pares de ouvidos atentos e bocas famintas, esperando pelo lanchinho que ela servia depois das leituras.', NULL),
+('Nem em sonho a Edilaine Aparecida de Lima poderia imaginar o que o futuro reservaria para ela. Aos 15 anos, grávida, passou fome, enfrentou a miséria. Virou catadora de papel e perdeu a guarda de uma das filhas. Doente, foi morar na Vila 29 de Outubro, em Curitiba. A ocupação fica no bairro Caximba, região do antigo aterro sanitário da capital paranaense. Só que essa história, que tinha tudo para terminar mal, serviu de combustível para Edilaine querer fazer a diferença. Ajudada pelos moradores da Vila nos momentos de maior necessidade, ela quis retribuir. Apaixonada por Monteiro Lobato, começou a reunir as crianças do bairro, durante a tarde, para contar histórias infantis. Quando se deu conta eram 30 pares de ouvidos atentos e bocas famintas, esperando pelo lanchinho que ela servia depois das leituras.', './imgHistoriasInspiradoras/img11.jpeg'),
 
-('Tudo começou como uma brincadeira de criança. Com as aulas presenciais suspensas, Maria Érica Rocha Simão, de 12 anos, reuniu os amiguinhos e passou a fingir que estava em uma escolinha. Tempo depois, contou com a ajuda dos vizinhos para transformar a distração em ocupação. Foi assim que surgiu, há quase um ano, a Escolinha da Esperança – um lugar onde a menina partilha seus conhecimentos em Português, Matemática e, principalmente, em Cidadania.', NULL),
+('Tudo começou como uma brincadeira de criança. Com as aulas presenciais suspensas, Maria Érica Rocha Simão, de 12 anos, reuniu os amiguinhos e passou a fingir que estava em uma escolinha. Tempo depois, contou com a ajuda dos vizinhos para transformar a distração em ocupação. Foi assim que surgiu, há quase um ano, a Escolinha da Esperança – um lugar onde a menina partilha seus conhecimentos em Português, Matemática e, principalmente, em Cidadania.', './imgHistoriasInspiradoras/img12.jpeg'),
 
-('Foi varrendo as ruas de Porto Alegre, no Rio Grande do Sul, que Rozeli da Silva teve a certeza do que tinha que fazer. Ela limpava o Centro da cidade a noite e via criaças debaixo da ponte pedindo comida. A cena levava a gari de volta à própria infância, um tempo marcado pela criminalidade e pela falta de perspectiva. Aos 11 anos, ela entrou em um relacionamento abusivo, viveu sob cárcere privado e foi mãe pela primeira vez aos 12. Depois de anos de luta, no entanto, pôs em prática o que chama de missão de vida: evitar que outras crianças sigam pelo mesmo caminho.', NULL),
+('Foi varrendo as ruas de Porto Alegre, no Rio Grande do Sul, que Rozeli da Silva teve a certeza do que tinha que fazer. Ela limpava o Centro da cidade a noite e via criaças debaixo da ponte pedindo comida. A cena levava a gari de volta à própria infância, um tempo marcado pela criminalidade e pela falta de perspectiva. Aos 11 anos, ela entrou em um relacionamento abusivo, viveu sob cárcere privado e foi mãe pela primeira vez aos 12. Depois de anos de luta, no entanto, pôs em prática o que chama de missão de vida: evitar que outras crianças sigam pelo mesmo caminho.', './imgHistoriasInspiradoras/img13.jpeg'),
 
-('Em abril deste ano, a catarinense Marlene Hinckel estava ansiosa para tomar a primeira dose da vacina contra a Covid-19. O motivo era bem específico: retomar as aulas do Ensino de Jovens e Adultos (EJA) na Escola Municipal Batista Pereira, em Florianópolis. Aos 63 anos, ela estava aprendendo a ler e escrever quando veio a pandemia. Isolada em casa, ela foi ficando triste, até que a filha decidiu deixar o emprego para ficar mais perto da mãe. Nas visitas, levava o Eduardo, neto da Marlene, que estava sendo alfabetizado.', NULL),
+('Em abril deste ano, a catarinense Marlene Hinckel estava ansiosa para tomar a primeira dose da vacina contra a Covid-19. O motivo era bem específico: retomar as aulas do Ensino de Jovens e Adultos (EJA) na Escola Municipal Batista Pereira, em Florianópolis. Aos 63 anos, ela estava aprendendo a ler e escrever quando veio a pandemia. Isolada em casa, ela foi ficando triste, até que a filha decidiu deixar o emprego para ficar mais perto da mãe. Nas visitas, levava o Eduardo, neto da Marlene, que estava sendo alfabetizado.', './imgHistoriasInspiradoras/img14.jpeg'),
 
-('Limitação é uma palavra desconhecida para a pequena Nicole Lemos, de 8 anos. Ela estuda, enfrentou todos os desafios das aulas à distância na pandemia, é modelo, criadora de conteúdo digital, se arrisca na capoeira e é bolsista de uma escola de balé, em Fortaleza, no Ceará. Aos 2 anos de idade a família descobriu que ela era surda. E isso nunca foi um problema.', NULL)
-
-
-select top 1 * from MensagensCurtas order by NEWID()
-
-select * from HistoriasInspiradoras
-where historia like '%menino%'
+('Limitação é uma palavra desconhecida para a pequena Nicole Lemos, de 8 anos. Ela estuda, enfrentou todos os desafios das aulas à distância na pandemia, é modelo, criadora de conteúdo digital, se arrisca na capoeira e é bolsista de uma escola de balé, em Fortaleza, no Ceará. Aos 2 anos de idade a família descobriu que ela era surda. E isso nunca foi um problema.', './imgHistoriasInspiradoras/img15.jpeg')
