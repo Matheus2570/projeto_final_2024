@@ -9,15 +9,17 @@ Este projeto é um site interativo que exibe mensagens de gratidão ao usuário 
 - 🎨 Interface intuitiva e amigável.
 - 📱 Responsivo: acessível em diferentes dispositivos (PC, tablet, smartphone).
 
-## Tecnologias Utilizadas
-- **Node.js**: Backend para gerenciamento do servidor e rotas.
-- **Express**: Framework para criação de rotas e APIs.
-- **Tedious**: Conexão com o banco de dados SQL Server.
-- **CORS**: Gerenciamento de permissões entre domínios.
-- **SQL**: Banco de dados para armazenar mensagens de gratidão.
-- **Insomnia**: Testes e desenvolvimento da API.
-- **HTML/CSS**: Estrutura e estilização do site.
-- **JavaScript**: Lógica de interação e consumo da API.
+## Tecnologias Utilizadas (Minha Parte)  
+A minha contribuição para o projeto foi o desenvolvimento do **backend**, incluindo a estruturação do sistema no padrão **MVC** e a implementação das mensagens de gratidão. Tecnologias que utilizei:  
+
+- **Node.js**: Backend para gerenciamento do servidor e rotas.  
+- **Express**: Framework para criação de rotas e APIs.  
+- **Tedious**: Conexão com o banco de dados SQL Server.  
+- **CORS**: Gerenciamento de permissões entre domínios.  
+- **SQL**: Banco de dados para armazenar mensagens de gratidão.  
+- **Insomnia**: Testes e desenvolvimento da API.  
+
+Outras partes do projeto, como o frontend e design da interface, foram desenvolvidas pelos demais integrantes do grupo.  
 
 ## Integrantes do Grupo:
 <img src="https://github.com/user-attachments/assets/da331068-ba47-4e8d-972e-9b738e6684db" width="300" alt="Foto do Grupo">
