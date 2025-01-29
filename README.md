@@ -26,19 +26,24 @@ Outras partes do projeto, como o frontend e design da interface, foram desenvolv
 
 
 ## Como Executar o Projeto
-1. Clone o repositório:
+
+1. Baixe e instale o Node.js:
+    ```bash
+   https://nodejs.org/pt 
+
+2. Clone o repositório:
    ```bash
    git clone https://github.com/Matheus2570/projeto_final_2024.git
 
-2. Inicie o projeto e coloque as blibliotecas:
+3. Inicie o projeto e coloque as blibliotecas:
    ```bash
    npm init -y
    npm install express tedious cors
 
-3. Banco de dados:
+4. Banco de dados:
    ```bash
    https://github.com/Matheus2570/projeto_final_2024/blob/main/backEnd/bancoDeDados.txt
 
- 4. Não esqueça de rodar seu servidor:
+ 5. Não esqueça de rodar seu servidor:
   ```bash
    node ./index.js
